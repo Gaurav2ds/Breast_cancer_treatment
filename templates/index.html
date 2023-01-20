@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Treatment</title>
+</head>
+<body>
+    <form action="/predict" method="POST">
+        <label >mean_radius</label>
+        <input type="value" name="mean_radius"><br>
+        <label >mean_texture</label>
+        <input type="value" name="mean_texture"><br>
+        <label >mean_perimeter</label>
+        <input type="value" name="mean_perimeter"><br>
+        <label >mean_area</label>
+        <input type="value" name="mean_area"><br>
+        <label >mean_smoothness</label>
+        <input type="value" name="mean_smoothness"><br>
+        <!-- <button type="submit" name="Diagnosis"> </button> -->
+        <input type="submit" name="Diagnosis" >
+        
+
+
+    </form>
+    {{ diagnosis }}
+    
+</body>
+</html>
